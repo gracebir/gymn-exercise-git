@@ -1,3 +1,5 @@
+# Bundle 1
+
 ```git init
  2333  clar
  2334  clear
@@ -45,4 +47,42 @@
  2437  git stash pop
  2438  clear
 
+```
+
+## Bundle 2
+
+```
+2446  git checkout -b ft/bundle-2
+ 2447  touch services.html
+ 2448  clear
+ 2449  git add services.html
+ 2450  git status
+ 2451  git commit -m "service page"
+ 2452  clear
+ 2453  git push
+ 2454  git push --set-upstream origin ft/bundle-2
+ 2455  git checkout main
+ 2456  git checkout -b ft/service-redesign
+ 2457  touch services.html
+ 2458  git add service.html
+ 2459  git commit -m "service page"
+ 2460  git push --set-upstream origin ft/service-redesign
+ 2461  git checkout main
+ 2462  touch service.html
+ 2463  clear
+ 2464  git add .
+ 2465  git commit -m "service redesign"
+ 2466  git push
+ 2467  git checkout ft/service-redesign
+ 2468  git pull
+ 2469  git pull origin main
+ 2470  git checkout main
+ 2471  git pull origin main
+ 2472  git checkout ft/service-redesign
+ 2473  git merge main
+ 2474  git status
+ 2475  git add .
+ 2476  git commit -m "solve conflict"
+ 2477  clear
+ 2478  git push
 ```
